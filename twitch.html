@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-88D6TX42WM"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-88D6TX42WM');
+  </script>
+
+
+    <link rel="stylesheet" href="icon_bar.css">
+    <script src="https://kit.fontawesome.com/8f09e2b497.js" crossorigin="anonymous"></script>
+
+    <title>twitch</title>
+  </head>
+  <body>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "sharkridergaming",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+
+    <div class="icon-bar">
+  <a href="index.html"><i class="fa fa-home"></i></a>
+  <a href="info.html"><i class="fas fa-info"></i></a>
+  <a href="youtube.html"><i class="fab fa-youtube"></i></a>
+  <a href="https://stats.uptimerobot.com/NGJEWiZM35"><i class="fa fa-globe"></i></a>
+  <a class="active"href="twitch.html"><i class="fab fa-twitch"></i></a>
+</div>
+  </body>
+</html>
